@@ -21,14 +21,6 @@
             text-align: center;
             margin: 1rem 0;
         }
-        nav a {
-            margin: 0 1rem;
-            text-decoration: none;
-            color: #333;
-        }
-        nav a:hover {
-            color: #0856aa;
-        }
         nav button {
             margin: 0 1rem;
             padding: 0.5rem 1rem;
@@ -40,7 +32,7 @@
             border-radius: 12px;/*rounded corners*/
         }
         nav button:hover {
-            background: #007BFF;
+            background: #5c0880;
         }
         main {
             padding: 2rem;
@@ -63,10 +55,11 @@
     </header>
 
     <nav>
-      
-        <button onclick="alert('Button about clicked!')">About</button>
-        <button onclick="alert('Button Projects clicked!')">Projects</button>
-        <button onclick="alert('jcasasantafsdev@gmail.com')">Contact</button>
+        <button onclick="window.location.href = 'about.html';">About</button>
+        <button onclick="window.location.href = 'projects.html';">Projects</button>
+        <button onclick="location.href='mailto:jcasasantafsdev@gmail.com'">Contact</button>
+
+
     </nav>
 
     <main>
@@ -93,5 +86,11 @@
     <footer>
         <p>&copy; 2024 Jesus Casasanta. All rights reserved.</p>
     </footer>
+
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
 </body>
 </html>
